@@ -1,5 +1,5 @@
 {
-  "name": "crypto-hashing",
+  "name": "multi-hashing-plus",
   "version": "1.0.0",
   "main": "cryptohashing",
   "author": {
@@ -7,7 +7,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nasa8x/crypto-hashing.git"
+    "url": "https://github.com/nasa8x/multi-hashing-plus.git"
   },
   "dependencies": {
     "bindings": "*",
@@ -15,7 +15,11 @@
   },
   "keywords": [
     "scrypt",
-    "scryptjane",
+    "x13",
+    "x15",
+    "x17",
+    "lyra2re",
+    "lyra2re",
     "script-n",
     "x11",
     "quark",
@@ -40,6 +44,6 @@
   "readmeFilename": "README.md",
   "description": "Multiple Crypto Hashing Algorithms",
   "bugs": {
-    "url": "https://github.com/nasa8x/crypto-hashing/issues"
+    "url": "https://github.com/nasa8x/multi-hashing-plus/issues"
   }
 }

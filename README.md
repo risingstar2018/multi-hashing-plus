@@ -31,15 +31,15 @@ Tested Node.js v9.5.0
 ## Install
 
 ```bash
-npm install crypto-hashing
+npm install multi-hashing-plus
 ```
 
 So far this native Node.js addon can do the following hashing algos
 
 ```js
-var Hash = require('crypto-hashing');
+var Hash = require('multi-hashing-plus');
 
-var algorithms = ['quark', 'x11','x13','x15','x17', 'scrypt', 'scryptn', 'xevan', 'keccak', 'lyra2re', 'skein', 'blake'];
+var algorithms = ['quark', 'x11', 'x13', 'x15', 'x17', 'scrypt', 'scryptn', 'xevan', 'keccak', 'lyra2re', 'skein', 'blake'];
 
 var data = new Buffer("7000000001e980924e4e1109230383e66d62945ff8e749903bea4336755c00000000000051928aff1b4d72416173a8c3948159a09a73ac3bb556aa6bfbcad1a85da7f4c1d13350531e24031b939b9e2b", "hex");
 
