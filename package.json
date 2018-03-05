@@ -1,16 +1,17 @@
 {
-  "name": "unomp-multi-hashing",
+  "name": "crypto-hashing",
   "version": "1.0.0",
-  "main": "multihashing",
+  "main": "cryptohashing",
   "author": {
-    "name": "zone117x"
+    "name": "nasa8x"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/UNOMP/node-multi-hashing.git"
+    "url": "https://github.com/nasa8x/crypto-hashing.git"
   },
   "dependencies": {
-    "bindings": "*"
+    "bindings": "*",
+    "nan": "*"
   },
   "keywords": [
     "scrypt",
@@ -30,13 +31,15 @@
     "neoscrypt",
     "decrypt"
   ],
-    "scripts": {
-    "install": "node-gyp rebuild"
+  "scripts": {
+    "install": "node-gyp rebuild",
+    "debug": "node-gyp rebuild --debug",
+    "test": "node test"
   },
   "gypfile": true,
   "readmeFilename": "README.md",
-  "description": "node-multi-hashing",
+  "description": "Multiple Crypto Hashing Algorithms",
   "bugs": {
-    "url": "https://github.com/UNOMP/node-multi-hashing/issues"
+    "url": "https://github.com/nasa8x/crypto-hashing/issues"
   }
 }

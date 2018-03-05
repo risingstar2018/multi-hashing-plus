@@ -1,9 +1,9 @@
 {
     "targets": [
         {
-            "target_name": "multihashing",
+            "target_name": "cryptohashing",
             "sources": [
-                "multihashing.cc",
+                "cryptohashing.cc",
                 "scryptn.c",
                 "yescrypt/sha256_Y.c",
                 "yescrypt/yescrypt-best.c",
@@ -19,19 +19,29 @@
                 "qubit.c",
                 "hefty1.c",
                 "shavite3.c",
-                "cryptonight.c",
+                # "cryptonight.c",
                 "x13.c",
                 "x14.c",
                 "boolberry.cc",
                 "nist5.c",
                 "sha1.c",
                 "x15.c",
+                "x17.c",
                 "fresh.c",
                 "s3.c",
                 "neoscrypt.c",
                 "dcrypt.c",
                 "jh.c",
                 "c11.c",
+                "Sponge.c",
+                "Lyra2.c",
+                "lyra2re.c",
+                "lyra2v2.c",
+                "lyra2z.c",
+                "xevan.c",
+                "sha3/sph_haval.c",
+                "sha3/sph_sha2.c",
+                "sha3/sph_sha2big.c",
                 "sha3/sph_hefty1.c",
                 "sha3/sph_fugue.c",
                 "sha3/aes_helper.c",
@@ -47,6 +57,7 @@
                 "sha3/sph_simd.c",
                 "sha3/sph_skein.c",
                 "sha3/sph_whirlpool.c",
+                
                 "sha3/sph_shabal.c",
                 "sha3/hamsi.c",
                 "crypto/oaes_lib.c",
@@ -60,7 +71,8 @@
                 "crypto/wild_keccak.cpp",
             ],
             "include_dirs": [
-                "crypto",
+                 "crypto",
+                 "<!(node -e \"require('nan')\")"
             ],
             "cflags": [
                 "-D_GNU_SOURCE -maes -fPIC -Ofast -flto -fuse-linker-plugin -funroll-loops -funswitch-loops -fpeel-loops"
